@@ -1,0 +1,8 @@
+<h1>Zone Index<h1/>
+
+<ul><%@zones.each do |zone|%>
+    <li>
+    <%=link_to zone.name, zone_path(zone) %>
+    </li>
+    <%end%>
+<ul/>

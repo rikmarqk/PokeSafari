@@ -1,0 +1,2 @@
+class ZonePokemonsController < ApplicationController
+end
