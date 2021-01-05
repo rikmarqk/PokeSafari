@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-    # has_secure_password
 
-
+    before_action :not_logged_in, only: [:show]
+    
     def index
         @users = User.all
     end

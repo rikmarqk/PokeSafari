@@ -1,3 +1,5 @@
 <h1><%= @user.name %><h1/>
 
 <img src=<%=@user.img_url%>>
+
+<%= button_to "logout", logout_path, method: :delete %>
