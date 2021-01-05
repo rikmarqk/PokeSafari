@@ -1,2 +1,10 @@
 <h1><%= @pokemon.name %><h1/>
-<h1><%= @pokemon.capt_num %><h1/>
+<h3>Type: <%= @pokemon.kind %><h3/>
+<h3>DEX Number: <%= @pokemon.dex_num %><h3/>
+<h3>Move Set</h3>
+<ul>
+<li><%=@pokemon.move_one%></li>
+<li><%=@pokemon.move_two%></li>
+<li><%=@pokemon.move_three%></li>
+<li><%=@pokemon.move_four%></li>
+<ul>
