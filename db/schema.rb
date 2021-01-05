@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2021_01_04_194048) do
     t.string "move_two"
     t.string "move_three"
     t.string "move_four"
+    t.integer "capt_num"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
