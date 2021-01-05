@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+    font-family: 'LEMONMILK-Light';
+    src: url("LEMONMILK-Light.otf") format("opentype");
+}
+
+body {
+    background-color: rgb(255, 230, 0);
+}
+
+h1 {
+    font-family: "LEMONMILK-Light";
+    letter-spacing: 8px;
+}
+h3 {
+    font-family: "LEMONMILK-Light";
+    letter-spacing: 4px;
+}
+li {
+    font-family: "LEMONMILK-Light";
+    letter-spacing: 2px;
+}
+
+ div.content {
+     background-color: rgb(24, 163, 255);
+     color: white;
+     padding: 20px;
+     align-content: left;
+     border-radius: 25px;
+ }
