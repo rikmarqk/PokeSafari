@@ -51,13 +51,13 @@ victree = Pokemon.create(name: "Victreebel",kind: "Grass/Poison",level: 44,dex_n
 gengar = Pokemon.create(name: "Gengar",kind: "Ghost/Poison",level: 100,dex_num: 94,move_one: "Nightmare", move_two: "Hypnosis", move_three: "Hex", move_four: "Dream Eater", capt_num: 80)
 
 #zones
-zone1 = Zone.create(name: "Volcan", description: "Firey Pits of Volcan, here, the floor REALLY is lava")
-zone2 = Zone.create(name: "Seafoam", description: "Hope you know how to swim....or have a Pokemon that can")
-zone3 = Zone.create(name: "Ice Age", description: "Bring a coat or three")
-zone4 = Zone.create(name: "Voltage", description: "You'll be shocked to see what's here")
-zone5 = Zone.create(name: "Grassy Plains", description: "Grean, leafy and wide open spaces")
-zone6 = Zone.create(name: "Legendary Island", description: "Bring a lot of Full Restore" )
-zone7 = Zone.create(name: "Chernobyl", description: "Hazardous AF")
+zone1 = Zone.create(name: "Volcan", description: "Firey Pits of Volcan, here, the floor REALLY is lava", img: "https://toppng.com/uploads/preview/volcano-art-lava-flash-11570448716wmkq11ovwl.jpg")
+zone2 = Zone.create(name: "Seafoam", description: "Hope you know how to swim....or have a Pokemon that can", img: "https://images.nintendolife.com/ae5cb8011b972/armor.original.jpg")
+zone3 = Zone.create(name: "Ice Age", description: "Bring a coat or three", img: "https://vignette3.wikia.nocookie.net/legendarymob/images/c/ca/Ice_cave.jpg/revision/latest?cb=20160924215941")
+zone4 = Zone.create(name: "Voltage", description: "You'll be shocked to see what's here", img: "https://pm1.narvii.com/5813/6f41acc29155c9641b897841189ff3206f2475d2_hq.jpg")
+zone5 = Zone.create(name: "Grassy Plains", description: "Grean, leafy and wide open spaces", img: "https://cdn.bulbagarden.net/upload/thumb/8/8c/Sky-Blue_Plains_RTDX.png/1200px-Sky-Blue_Plains_RTDX.png")
+zone6 = Zone.create(name: "Legendary Island", description: "Bring a lot of Full Restore", img: "https://cdn.bulbagarden.net/upload/thumb/7/7c/Legendary_Island_RTDX.png/1200px-Legendary_Island_RTDX.png")
+zone7 = Zone.create(name: "Chernobyl", description: "Hazardous AF", img: "https://pokemongamersblog.files.wordpress.com/2008/09/torn_world.png")
 
 #ZONE POKEMON
 #fire_zone
