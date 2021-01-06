@@ -1,8 +1,13 @@
-<h1>Pokemon Index<h1/>
+<div class="topbanner">
+<h1>PokeDex<h1/>
+</div>
 
 <ul><%@pokemons.each do |pokemon|%>
     <li>
+    <img src=<%=pokemon.img_url%>>
+    <br/>
     <%=link_to pokemon.name, pokemon_path(pokemon) %>
     </li>
+    <br/>
     <%end%>
 <ul/>

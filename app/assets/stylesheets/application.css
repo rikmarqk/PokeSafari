@@ -34,13 +34,43 @@ h3 {
 li {
     font-family: "LEMONMILK-Light";
     letter-spacing: 2px;
-    font-size: ;
+    font-size: 11px;
+    list-style-type: none;
 }
+
+/* unvisited link */
+a:link {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(104, 80, 0);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(104, 80, 0);
+  }
+
+ div.topbanner {
+     background-color: rgb(24, 163, 255);
+     width: auto;
+     height: 150px;
+ }
 
  div.content {
      background-color: rgb(24, 163, 255);
      color: white;
      padding: 20px;
+     padding-left: 30px;
      align-content: left;
      border-radius: 25px;
+     box-shadow: 3px 3px 4px #d3ac01;
+     width: 600px;
  }
