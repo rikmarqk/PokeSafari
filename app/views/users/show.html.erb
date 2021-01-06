@@ -1,5 +1,9 @@
 <h1><%= @user.name %><h1/>
 
 <img src=<%=@user.img_url%>>
+<h3>Your Current Pokemons</h3>
+<div>
+<%=@user.pokemons.name%>
 
+</div>
 <%= button_to "logout", logout_path, method: :delete %>
