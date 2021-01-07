@@ -13,6 +13,7 @@ class UsersController < ApplicationController
         if  @user.valid?
             @user.save
             session[:id] = @user.id
+            session[:total_clicks] = 0
             redirect_to user_path(@user)
         else 
             flash[:errors] = @user.errors.full_messages
@@ -21,6 +22,10 @@ class UsersController < ApplicationController
     end 
     def show
         @user = User.find(params[:id])
+    end
+    def click
+        session[:total_clicks] += 1
+        redirect_to pokemon_path(session[:current_pokemon])
     end
 
     private 

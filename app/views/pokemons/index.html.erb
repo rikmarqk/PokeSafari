@@ -1,13 +1,13 @@
 <div class="topbanner">
-<h1>PokeDex<h1/>
+<h1 class="pagetitle">PokeDex<h1/>
 </div>
 
-<ul><%@pokemons.each do |pokemon|%>
+<div class="dex">
+<ul id="hori"><%@pokemons.each do |pokemon|%>
     <li>
     <img src=<%=pokemon.img_url%>>
-    <br/>
     <%=link_to pokemon.name, pokemon_path(pokemon) %>
     </li>
-    <br/>
     <%end%>
 <ul/>
+</div>

@@ -1,7 +1,18 @@
+<div class="leftbanner">
+<ul><%@pokemons.each do |pokemon|%>
+    <li><%= link_to pokemon.name, pokemon_path(pokemon)%></li>
+    <%end%>
+    </ul>
+</div>
 <div class="content">
 <h1><%= @pokemon.name %><h1/>
 <img src=<%=@pokemon.img_url%>>
 <h3>Type: <%= @pokemon.kind %><h3/>
+
+<p><%=link_to "Capture", click_path %></p>
+<p><%= session[:total_clicks]%></p>
+<p><% session[:current_pokemon] = @pokemon.id%></p>
+
 <h3>DEX Number: <%= @pokemon.dex_num %><h3/>
 <h3>Move Set</h3>
 <ul>

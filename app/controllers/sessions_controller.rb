@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+    
     def new 
         @user = User.new
     end 
@@ -6,7 +7,8 @@ class SessionsController < ApplicationController
     def create 
         @user = User.find_by(email: params[:user][:email])
         if @user && @user.authenticate(params[:user][:password])
-            session[:id] = @user.id 
+            session[:id] = @user.id
+            session[:total_clicks] = 0
             redirect_to user_path(@user)
         else  
             flash[:errors] = "Email Or Password Is Incorrect"
