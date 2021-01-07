@@ -1,7 +1,13 @@
 <div class="topbanner">
 <h1 class="pagetitle">PokeDex<h1/>
 </div>
+<div>
+<%=form_for "", url: pokemons_path, role:"search", method: :get do %>
+<%=text_field_tag :search, @search_tern, placeholder:"Search Here"%>
+<%=submit_tag "Search"%>
 
+<%end%>
+</div>
 <div class="dex">
 <ul id="hori"><%@pokemons.each do |pokemon|%>
     <li>
@@ -10,4 +16,7 @@
     </li>
     <%end%>
 <ul/>
-</div>
+</div><br><br><br>
+<%=link_to "Look By Zone", zones_path%><br><br><br>
+<%=link_to "Back Profile", user_path(session[:id])%><br><br><br>
+<%=link_to "Back To Full Pokedex", pokemons_path%><br><br><br><br>

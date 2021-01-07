@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # root ‘home#index’
   
-  resources :users, :pokemons, :zones
- 
+  resources :users, :pokemons, :zones, :user_pokemons
+  
+  get '/welcome', to: 'application#welcome'
   post '/users/new', to: 'users#new'
   get '/login', to: 'sessions#new', as:'login'
   post '/login', to: 'sessions#create'

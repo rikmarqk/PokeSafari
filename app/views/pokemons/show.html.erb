@@ -20,5 +20,15 @@
 <li><%=@pokemon.move_two%></li>
 <li><%=@pokemon.move_three%></li>
 <li><%=@pokemon.move_four%></li>
-<ul>
+<ul><br><br>
+<%= form_for @user_pokemon do |f| %>
+<%= f.label :nickname %>
+<%= f.text_field :nickname %><br>
+<%=f.hidden_field :user_id, :value => session[:id] %>
+<%= f.hidden_field :pokemon_id, :value => @pokemon.id %>
+<%= f.submit "Add To Your Pokedex" %>
+<%end%><br><br>
+
+<%=link_to "Back Profile", user_path(session[:id])%>
 </div>
+
