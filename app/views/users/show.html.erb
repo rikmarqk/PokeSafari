@@ -3,7 +3,11 @@
 <img src=<%=@user.img_url%>>
 <h3>Your Current Pokemons</h3>
 <div>
-<%=@user.pokemons.name%>
+<%@user.pokemons.each do |pokemon|%>
+<%=link_to pokemon.name, pokemon_path(pokemon)%>
+<a href=<%=pokemon_path(pokemon)%>><img src=<%= pokemon.img_url%>></a>
+<%end%>
 
 </div>
+<%= link_to "See Full Pokedex", pokemons_path %>
 <%= button_to "logout", logout_path, method: :delete %>

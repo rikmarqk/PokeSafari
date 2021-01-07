@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # root ‘home#index’
   
   resources :users, :pokemons, :zones
+ 
   post '/users/new', to: 'users#new'
   get '/login', to: 'sessions#new', as:'login'
   post '/login', to: 'sessions#create'
