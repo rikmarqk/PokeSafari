@@ -1,0 +1,12 @@
+<h1> Add A Pokemon To You</h1>
+
+
+
+<%= form_for @user_pokemon do |f| %>
+<%= f.label :nickname %>
+<%= f.text_field :nickname %><br>
+<%=f.hidden_field :user_id, :value => session[:id] %>
+<%= f.label :pokemon_id %>
+<%= f.collection_select :pokemon_id, Pokemon.all, :id, :name%><br>
+<%= f.submit  %>
+<%end%>
