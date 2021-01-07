@@ -10,6 +10,7 @@ class CreatePokemons < ActiveRecord::Migration[6.1]
       t.string :move_three
       t.string :move_four
       t.string :img_url
+      t.integer :capt_num
       t.timestamps
     end
   end
