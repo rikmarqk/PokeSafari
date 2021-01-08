@@ -19,4 +19,9 @@ class SessionsController < ApplicationController
         session.clear 
         redirect_to login_path
     end 
+
+# <audio src="https://vgmsite.com/soundtracks/pokemon-gameboy-sound-collection/gbhogmtx/107-battle%20%28vs%20wild%20pokemon%29.mp3" 
+#  controls >
+ 
+# </audio>
 end

@@ -184,7 +184,7 @@ zone3 = Zone.create(name: "Ice Age", description: "Bring a coat or three", img_u
 zone4 = Zone.create(name: "Voltage", description: "You'll be shocked to see what's here", img_url: "https://pm1.narvii.com/5813/6f41acc29155c9641b897841189ff3206f2475d2_hq.jpg")
 zone5 = Zone.create(name: "Grassy Plains", description: "Grean, leafy and wide open spaces", img_url: "https://cdn.bulbagarden.net/upload/thumb/8/8c/Sky-Blue_Plains_RTDX.png/1200px-Sky-Blue_Plains_RTDX.png")
 zone6 = Zone.create(name: "Legendary Island", description: "Bring a lot of Full Restore", img_url: "https://cdn.bulbagarden.net/upload/thumb/7/7c/Legendary_Island_RTDX.png/1200px-Legendary_Island_RTDX.png")
-zone7 = Zone.create(name: "Chernobyl", description: "Hazardous AF", img_url: "https://pokemongamersblog.files.wordpress.com/2008/09/torn_world.png")
+zone7 = Zone.create(name: "Toxica", description: "Hazardous, wear a hazmat suit at all times", img_url: "https://pokemongamersblog.files.wordpress.com/2008/09/torn_world.png")
 
 #ZONE POKEMON
 #fire_zone
@@ -193,19 +193,49 @@ ZonePokemon.create(zone_id:zone1.id, pokemon_id: charizard.id)
 ZonePokemon.create(zone_id:zone1.id, pokemon_id: rhydon.id)
 ZonePokemon.create(zone_id:zone1.id, pokemon_id: magmar.id)
 ZonePokemon.create(zone_id:zone1.id, pokemon_id: aerodactyl.id)
+ZonePokemon.create(zone_id:zone1.id, pokemon_id: onix.id)
+ZonePokemon.create(zone_id:zone1.id, pokemon_id: golem.id)
 
 # #water_zone
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: squirtle.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: wartortle.id)
 ZonePokemon.create(zone_id: zone2.id, pokemon_id: blastoise.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: poliwag.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: poliwhirl.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: poliwrath.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: psyduck.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: golduck.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: tentacool.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: tentacruel.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: seel.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: dewgong.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: krabby.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: kingler.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: horsea.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: seadra.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: staryu.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: starmie.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: vaporeon.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: magikarp.id)
 ZonePokemon.create(zone_id: zone2.id, pokemon_id: gyarados.id)
+ZonePokemon.create(zone_id: zone2.id, pokemon_id: lapras.id)
 
 # #ice_zone
 ZonePokemon.create(zone_id:zone3.id, pokemon_id:jynx.id)
+ZonePokemon.create(zone_id:zone3.id, pokemon_id:shellder.id)
 ZonePokemon.create(zone_id:zone3.id, pokemon_id:cloy.id)
+ZonePokemon.create(zone_id:zone3.id, pokemon_id:seel.id)
+ZonePokemon.create(zone_id:zone3.id, pokemon_id:dewgong.id)
+ZonePokemon.create(zone_id:zone3.id, pokemon_id:lapras.id)
+ZonePokemon.create(zone_id:zone3.id, pokemon_id:slowpoke.id)
+ZonePokemon.create(zone_id:zone3.id, pokemon_id:slowbro.id)
 
 # #electric_zone
 ZonePokemon.create(zone_id:zone4.id, pokemon_id:porygon.id)
 ZonePokemon.create(zone_id:zone4.id, pokemon_id:muk.id)
 ZonePokemon.create(zone_id:zone4.id, pokemon_id:electrode.id)
+ZonePokemon.create(zone_id:zone4.id, pokemon_id:pikachu.id)
+ZonePokemon.create(zone_id:zone4.id, pokemon_id:raichu.id)
 
 # #grass/normal_zone
 ZonePokemon.create(zone_id:zone5.id, pokemon_id:dragonite.id)

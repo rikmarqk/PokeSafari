@@ -4,7 +4,7 @@
 <div id="search">
 <%=form_for "", url: pokemons_path, role:"search", method: :get do %>
 <%=text_field_tag :search, @search_tern, placeholder:"Search Here"%>
-<%=submit_tag "Search"%>
+<%=submit_tag "Search", class: 'button'%>
 <%end%>
 </div>
 <div class="navlinks_content">
@@ -18,17 +18,18 @@
 <h1><%= @user.name %><h1/>
 
 <img id="user" src=<%=@user.img_url%>>
-<h3>Your Current Pokemon</h3>
+<h5>Your Current Roster</h5>
 <ul id="hori">
-<li><%@user.user_pokemons.each do |user_pokemon|%>
-<%=link_to user_pokemon.nickname, pokemon_path(user_pokemon.pokemon)%>
+<%@user.user_pokemons.each do |user_pokemon|%>
+<li><%=link_to user_pokemon.nickname, pokemon_path(user_pokemon.pokemon)%>
 <a href=<%=pokemon_path(user_pokemon.pokemon)%>><img src=<%= user_pokemon.pokemon.img_url%>></a>
 <%=link_to "Edit Nickname", edit_user_pokemon_path(session[:id])%>
-<%= button_to 'Release', user_path(user_pokemon), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= button_to 'Release', user_path(user_pokemon), method: :delete, data: { confirm: 'Are you sure?' } , class: 'button2'%>
 </li>
 <%end%><br><br><br><br><br><br>
-<%= link_to "See Full Pokedex", pokemons_path %><br><br>
-<%= link_to "See The Safari Zones", zones_path %><br><br>
-<%= button_to "logout", logout_path, method: :delete %>
-
+<ul id="hori">
+<li><%= link_to "See Full Pokedex", pokemons_path %></li>&nbsp;&nbsp;&nbsp;<li>|</li>&nbsp;&nbsp;&nbsp;
+<li><%= link_to "See The Safari Zones", zones_path %></li></br></br>
+<li><%= button_to "logout", logout_path, method: :delete , class: 'button2' %></li>
+</ul>
 </div>

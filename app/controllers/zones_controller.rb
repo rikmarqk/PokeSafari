@@ -5,7 +5,9 @@ class ZonesController < ApplicationController
         @zones = Zone.all
     end
     def show
+        @zones = Zone.all
         @zone = Zone.find(params[:id])
+
     end
     
 

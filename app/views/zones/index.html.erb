@@ -4,7 +4,7 @@
 <div id="search">
 <%=form_for "", url: pokemons_path, role:"search", method: :get do %>
 <%=text_field_tag :search, @search_tern, placeholder:"Search Here"%>
-<%=submit_tag "Search"%>
+<%=submit_tag "Search", class: 'button'%>
 <%end%>
 </div>
 <div class="navlinks_content">
@@ -25,7 +25,9 @@
     <%end%>
 <ul/><br><br>
 <div class="navlinks_content">
-<%=link_to "Back Profile", user_path(session[:id])%><br>
-<%=link_to "Back To Pokedex", pokemons_path%><br><br><br><br>
+<ul id="hori">
+<li><%=link_to "Back Profile", user_path(session[:id])%></li>&nbsp;&nbsp;&nbsp;<li>|</li>&nbsp;&nbsp;&nbsp;
+<li><%=link_to "Back To Pokedex", pokemons_path%></li><br><br><br><br>
+</ul>
 </div>
 </div>

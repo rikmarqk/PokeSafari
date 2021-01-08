@@ -1,3 +1,7 @@
+<div class="topbanner">
+<img id="pokebanner" src="https://www.pinclipart.com/picdir/big/164-1648349_pokemon-brick-bronze-png-banner-library-stock-pokemon.png">
+</div>
+
 <h1>Login</h1>
 
 <%if  flash[:errors] %>
@@ -8,10 +12,10 @@
 <%= f.label :email%><br>
 <%= f.text_field :email, placeholder: "Email"%><br>
 <%= f.label :password%><br>
-<%= f.password_field :password, placeholder: "Password"%><br><br>
-<%= f.submit 'Login'%><br>
+<%= f.password_field :password, placeholder: "Password", class: 'textfield' %><br><br>
+<%= f.submit 'Login', class: 'button2' %><br>
 <%end%><br>
 <p> Do Not Have a Pokedex Account?</p>
 
-<%=link_to "Create Account", new_user_path %>
+<%=link_to "Create Account", new_user_path , class: 'button2' %>
 </div>

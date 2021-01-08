@@ -5,7 +5,7 @@
 <div id="search">
 <%=form_for "", url: pokemons_path, role:"search", method: :get do %>
 <%=text_field_tag :search, @search_tern, placeholder:"Search Here"%>
-<%=submit_tag "Search"%>
+<%=submit_tag "Search", class: 'button'%>
 <%end%>
 </div>
 <div class="navlinks_content">
@@ -24,14 +24,10 @@
 <div class="content">
 <h1><%= @pokemon.name %><h1/>
 <img src=<%=@pokemon.img_url%>>
-<h3>Type: <%= @pokemon.kind %><h3/>
+<h5>Type: <%= @pokemon.kind %><h5/>
 
-<p><%=link_to "Capture", click_path %></p>
-<p><%= session[:total_clicks]%></p>
-<p><% session[:current_pokemon] = @pokemon.id%></p>
-
-<h3>DEX Number: <%= @pokemon.dex_num %><h3/>
-<h3>Move Set</h3>
+<h5>DEX Number: <%= @pokemon.dex_num %><h5/>
+<h5>Move Set:</h5>
 <ul>
 <li><%=@pokemon.move_one%></li>
 <li><%=@pokemon.move_two%></li>
@@ -42,14 +38,12 @@
 <%= f.label :nickname %>
 <%= f.text_field :nickname %><br>
 <%=f.hidden_field :user_id, :value => session[:id] %>
-<%= f.hidden_field :pokemon_id, :value => @pokemon.id %>
-<%= f.submit "Add To Your Pokedex" %>
+<%= f.hidden_field :pokemon_id, :value => @pokemon.id %><br><br><br>
+<%= f.submit "Add To Your Roster" , class: 'button2' %>
 <%end%><br><br>
-<%= link_to "See Full Pokedex", pokemons_path %><br><br>
-<%=link_to "Back Profile", user_path(session[:id])%>
+<ul id="hori">
+<li><%= link_to "See Full Pokedex", pokemons_path %></li>&nbsp;&nbsp;&nbsp;<li>|</li>&nbsp;&nbsp;&nbsp;
+<li><%=link_to "Back Profile", user_path(session[:id])%></li>
+</ul>
 </div>
-<audio src="https://vgmsite.com/soundtracks/pokemon-gameboy-sound-collection/gbhogmtx/107-battle%20%28vs%20wild%20pokemon%29.mp3" 
- controls >
-
-</audio>
 </div>
