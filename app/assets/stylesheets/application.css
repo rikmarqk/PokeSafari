@@ -28,10 +28,34 @@ h1 {
     letter-spacing: 8px;
 }
 h1.pagetitle {
-    padding: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 21px;
+    float: left;
 }
-
+input[type=text] {
+    background-color: rgb(255, 246, 167);
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: #d3ac01;
+    border-radius: 15px;
+  }
+  div#search {
+      margin-top: 85px;
+      margin-left: 0px;
+      float: left;
+  }
+div.navlinks_content {
+    font-size: 12px;
+    float: left;
+    margin-left: 0px;
+    margin-right: auto;
+    padding: 20px;
+}
 h3 {
     font-family: "LEMONMILK-Light";
     letter-spacing: 4px;
@@ -42,7 +66,14 @@ li {
     font-size: 11px;
     list-style-type: none;
 }
+#button{
+    background-color: red;
+}
 
+img#user {
+    width: 125px;
+    height: auto;
+}
 /* unvisited link */
 a:link {
     color: rgb(0, 0, 0);
@@ -67,13 +98,18 @@ a:link {
     text-decoration: none;
   }
 
+  img#pokebanner {
+      height: 130px;
+      width: auto;
+      padding: 20px;
+      margin-left: 0px;
+      margin-right: auto;
+      float: left;
+  }
+
  div.topbanner {
-     background-color: rgb(24, 163, 255);
      width: auto;
-     height: 110px;
-     margin-top: -22px;
-     margin-left: -10;
-     margin-right: -10;
+     height: auto;
  }
 
  div.dex {
@@ -87,6 +123,7 @@ a:link {
 ul#hori li {
     display: inline;
 }
+
  div.content {
      background-color: rgb(24, 163, 255);
      color: white;
@@ -102,14 +139,16 @@ ul#hori li {
  div.leftbanner {
     float:left;
     background-color: rgb(181, 225, 255);
-    color: rgb(76, 98, 112);
+    color: rgb(23, 33, 39);
     padding: 20px;
     padding-left: 30px;
     align-content: left;
     border-radius: 25px;
     box-shadow: 3px 3px 4px #d3ac01;
     width: 200px;
-    height: auto;
+    height: 450px;
     float: left;
     overflow:scroll;
+    margin-left: 50px;
+
  }
