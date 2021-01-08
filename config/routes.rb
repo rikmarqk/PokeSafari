@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   resources :users, :pokemons, :zones, :user_pokemons
   
-  get '/welcome', to: 'application#welcome'
+  get '/welcome', to: 'static_folders#welcome', as: :welcome
   post '/users/new', to: 'users#new'
   get '/login', to: 'sessions#new', as:'login'
   post '/login', to: 'sessions#create'
