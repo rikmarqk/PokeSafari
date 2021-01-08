@@ -14,12 +14,11 @@ ZonePokemon.destroy_all
 
 #users
 
-rick = User.create(name:"Rick", email: "rikmarqk@gmail.com", password: "1234", img_url: "guy.jpeg")
-akram = User.create(name:"Paul Blart", email: "mallcop@gmail.com", password: "1234", img_url: "guy.jpeg")
+rick = User.create(name:"Rick", email: "rikmarqk@gmail.com", password: "1234", img_url: "https://www.pikpng.com/pngl/b/432-4323163_pokemon-red-trainer-sprites-sun-and-moon-red.png")
+akram = User.create(name:"Paul Blart", email: "mallcop@gmail.com", password: "1234", img_url: "https://www.pikpng.com/pngl/b/432-4323163_pokemon-red-trainer-sprites-sun-and-moon-red.png")
 
 
 #pokemon
-
 
 # = Pokemon.create(name: "", kind: "", level: , dex_num: , move_one: "", move_two: "", move_three: "", move_four: "", img_url: "https://img.pokemondb.net/sprites/black-white/anim/normal/.gif")
 

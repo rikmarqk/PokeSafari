@@ -1,3 +1,20 @@
+<div class="topbanner">
+<img id="pokebanner" src="https://www.pinclipart.com/picdir/big/164-1648349_pokemon-brick-bronze-png-banner-library-stock-pokemon.png">
+<h1 class="pagetitle">PokeDex<h1/>
+<div id="search">
+<%=form_for "", url: pokemons_path, role:"search", method: :get do %>
+<%=text_field_tag :search, @search_tern, placeholder:"Search Here"%>
+<%=submit_tag "Search"%>
+<%end%>
+</div>
+<div class="navlinks_content">
+<%=link_to "Search By Zone", zones_path%>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<%=link_to "My Profile", user_path(session[:id])%>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<%=link_to "Pokedex", pokemons_path%>
+</div>
+</div>
+
+
 <div class="content">
 <h1>All Safari Zones<h1/>
 <h3>Each Zone Has Its Own Unique Pokemons</h3>
@@ -7,6 +24,8 @@
     </li>
     <%end%>
 <ul/><br><br>
+<div class="navlinks_content">
 <%=link_to "Back Profile", user_path(session[:id])%><br>
 <%=link_to "Back To Pokedex", pokemons_path%><br><br><br><br>
+</div>
 </div>
