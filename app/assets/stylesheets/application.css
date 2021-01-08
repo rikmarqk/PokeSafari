@@ -21,6 +21,11 @@
 
 body {
     background-color: rgb(255, 230, 0);
+    font-family: "LEMONMILK-Light";
+}
+
+label {
+    letter-spacing: 3px;
 }
 
 h1 {
@@ -105,6 +110,10 @@ a:link {
       margin-left: 0px;
       margin-right: auto;
       float: left;
+  }
+  img#zone {
+      width: 600px;
+      height: auto;
   }
 
  div.topbanner {
