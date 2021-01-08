@@ -1,4 +1,21 @@
+<div class="bodycontent">
+<div class="topbanner">
+<img id="pokebanner" src="https://www.pinclipart.com/picdir/big/164-1648349_pokemon-brick-bronze-png-banner-library-stock-pokemon.png">
+<h1 class="pagetitle">PokeDex<h1/>
+<div id="search">
+<%=form_for "", url: pokemons_path, role:"search", method: :get do %>
+<%=text_field_tag :search, @search_tern, placeholder:"Search Here"%>
+<%=submit_tag "Search"%>
+<%end%>
+</div>
+<div class="navlinks_content">
+<%=link_to "Search By Zone", zones_path%>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<%=link_to "My Profile", user_path(session[:id])%>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<%=link_to "Pokedex", pokemons_path%>
+</div>
+</div>
 <div class="leftbanner">
+<h3>PokeDex<h3>
 <ul><%@pokemons.each do |pokemon|%>
     <li><%= link_to pokemon.name, pokemon_path(pokemon)%></li>
     <%end%>
@@ -35,3 +52,4 @@
  controls >
 
 </audio>
+</div>
