@@ -1,0 +1,7 @@
+<%= form_for @user_pokemon do |f| %>
+<%= f.label :nickname %>
+<%= f.text_field :nickname %><br>
+<%=f.hidden_field :user_id, :value => session[:id] %>
+<%= f.hidden_field :pokemon_id, :value => @user_pokemon.pokemon_id %>
+<%= f.submit "Edit Nickname" %>
+<%end%><br><br>

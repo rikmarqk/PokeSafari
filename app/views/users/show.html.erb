@@ -23,6 +23,7 @@
 <li><%@user.user_pokemons.each do |user_pokemon|%>
 <%=link_to user_pokemon.nickname, pokemon_path(user_pokemon.pokemon)%>
 <a href=<%=pokemon_path(user_pokemon.pokemon)%>><img src=<%= user_pokemon.pokemon.img_url%>></a>
+<%=link_to "Edit Nickname", edit_user_pokemon_path(session[:id])%>
 <%= button_to 'Release', user_path(user_pokemon), method: :delete, data: { confirm: 'Are you sure?' } %>
 </li>
 <%end%><br><br><br><br><br><br>
