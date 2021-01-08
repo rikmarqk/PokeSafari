@@ -11,11 +11,18 @@ class UserPokemonsController < ApplicationController
                 redirect_to user_path(@user_pokemon.user)
             else 
                 flash[:errors] = @user.errors.full_messages
-                redirect_to new_user_path
+                redirect_to new_user_pokemon_path
             end 
     
     end 
-
+    def edit
+        @user_pokemon = UserPokemon.find(params[:id])
+    end 
+    def update 
+        @user_pokemon = UserPokemon.find(params[:id])
+        @user_pokemon.update(user_pokemon_params)
+        redirect_to user_path(session[:id])
+    end 
 
 
 

@@ -20,7 +20,7 @@ akram = User.create(name:"Paul Blart", email: "mallcop@gmail.com", password: "12
 
 #pokemon
 
-<<<<<<< HEAD
+
 # = Pokemon.create(name: "", kind: "", level: , dex_num: , move_one: "", move_two: "", move_three: "", move_four: "", img_url: "https://img.pokemondb.net/sprites/black-white/anim/normal/.gif")
 
 bulbasaur = Pokemon.create(name: "Bulbasaur", kind: "Grass/Poison", level: 15, dex_num: 1, move_one: "Razorleaf", move_two: "Vine Whip", move_three: "Poison Powder", move_four: "Sleep Powder", img_url: "https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif", capt_num:75)

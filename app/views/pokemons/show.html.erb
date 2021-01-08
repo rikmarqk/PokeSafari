@@ -28,7 +28,10 @@
 <%= f.hidden_field :pokemon_id, :value => @pokemon.id %>
 <%= f.submit "Add To Your Pokedex" %>
 <%end%><br><br>
-
+<%= link_to "See Full Pokedex", pokemons_path %><br><br>
 <%=link_to "Back Profile", user_path(session[:id])%>
 </div>
+<audio src="https://vgmsite.com/soundtracks/pokemon-gameboy-sound-collection/gbhogmtx/107-battle%20%28vs%20wild%20pokemon%29.mp3" 
+ controls >
 
+</audio>
